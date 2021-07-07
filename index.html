@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Genubukan Mikayama Dojo</title>
+    <meta name="description" content="Genubukan Mikayama Dojo">
+    <meta name="author" content="Sean Farrell">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/mikayama.css">
+    <script src="js/leaflet.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  </head>
+<body>
+
+  <div class="section hero">
+    <div class="container">
+      <div class="row">
+        <div class="one-third column hero-logo">
+          <img class="logo" src="images/genbukan.png">
+        </div>
+        <div class="two-thirds column hero-text">
+          <h3 class="hero-heading">Genubukan Mikayama Dojo</h3>
+          <p class="hero-description">Das Genubukan Ninjutzu Dojo in Karlsruhe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section ninjutzu">
+    <div class="container">
+      <h3 class="section-heading">Genbukan Ninjutzu</h3>
+      <p class="section-description"><a href="https://genbukan.org/">Genbukan Ninjutsu</a> 
+        ist die Ninjutsu Schule gegründet von 
+        <a href="https://genbukan.org/home/masters/267-2/">Großmeister Tanemura</a> und knüpft nahtlos an die 
+        traditionelle Kampfkunst der Ninja. Wir bringen dir den unbewaffneten 
+        und bewaffneten Kampf aus den <a href="https://genbukan.de/ninponinjutsu/">36 Schulen</a> 
+        der Ninja bei. Es fängt mit dem Tai-Jutsu an, dem unbewaffneten Kampf und folg mit Schulen wie dem 
+        Biken-Jutsu (Schwert), dem Hanbo-Jutsu (Kurzstock) oder gar dem 
+        Shuriken-Jutsu (Wurfmesser & Wurfstern).</p>
+    </div>
+  </div>
+  <div class="section traning">
+    <div class="container">
+      <h3 class="section-heading">Training</h3>
+      <div class="row">
+        <div class="one-half column">
+          <div id="map" style="height:100%;min-height:350px;border:1px  solid black"></div>
+        </div>
+        <div class="one-half column">
+          <p class="section-description">
+            Das Traning findet jeden Dienstag um 20:30 im Dojo des 
+            <a href="https://www.ssc-karlsruhe.de/">SSC</a> stat.
+          </p>
+          <h5 class="section-heading">Schnupper Training</h5>
+          <p class="section-description">
+            Du kannst gerne zu einem Schnupper Training vorbeikommen. Du
+            brauchst feste Sportkleidung und etwas zu Trinken. Es ist
+            kein spezielles Schuhwerk notwendig, da das Traning barfuss order
+            in Socken statfinet.
+          </p>
+          <p class="section-description">
+            Gerne kannst du unter +49 176 588 74356 anrufen oder sean.farrell@rioki.org
+            emailen, wenn du weitere Fragen hast. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section imprint">
+    <div class="container">
+      <h3 class="section-heading">Impressum</h3>
+      <p class="section-description">Das Genubukan Mikajama Dojo is teil des <a href="https://www.ssc-karlsruhe.de/">Sport- und SchwimmClub Karlsruhe e.V.</a></p>
+      <p class="section-description">
+        Für diese Seite ist verantwortlich:<br/>
+        Sean Farrell<br/>
+        Amalienstr. 46<br/>
+        76133 Karlsruhe<br/>
+        Deutchland<br/>
+        <br/>
+        sean.farrell@rioki.org<br/>
+        +49 176 588 74356<br/>
+      </p>
+      <p class="section-description">Diese Seite verwendet keine cookies.</p>
+    </div>
+  </div>
+ <script type="text/javascript">
+    var map = L.map('map').setView([49.02607, 8.44102], 15);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([49.02607, 8.44102]).addTo(map)
+        .bindPopup('Dojo (Kampfsportraum) des SSC<br>Am Sportpark 5<br>76131 Karlsruhe')
+        .openPopup();
+ </script>
+</body>
+</html>
