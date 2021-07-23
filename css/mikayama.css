@@ -33,6 +33,33 @@
   background-color: rgb(236, 236, 236);
 }
 
+.event-date {
+  margin: 0 auto;
+  width: 8em;
+  background-color: rgb(236, 236, 236);
+}
+
+.event-heading {
+  text-align: left;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-date-day {
+  display: block;
+  font-size: 200%;
+}
+
+.event-date-month {
+  display: block;
+}
+
+.event-date-year {
+  display: block;
+  font-size: 75%;
+}
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
