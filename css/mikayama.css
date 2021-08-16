@@ -61,6 +61,10 @@
   font-size: 75%;
 }
 
+.center {
+  text-align: center;
+}
+
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
