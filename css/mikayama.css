@@ -1,13 +1,17 @@
 
 .section {
   padding: 6rem 0 5rem;
+  text-align: left;
+}
+
+.section-heading {
+  margin-bottom: 5rem;
   text-align: center;
 }
-.section-heading,
+
 .section-description {
   margin-bottom: 1.2rem;
 }
-
 
 .hero {
   background-image: url('../images/tatami.jpg');
@@ -31,6 +35,10 @@
 
 .imprint {
   background-color: rgb(236, 236, 236);
+}
+
+.event {
+  text-align: center;
 }
 
 .event-date {
@@ -59,6 +67,25 @@
 .event-date-year {
   display: block;
   font-size: 75%;
+}
+
+.price-block {
+  background-color: rgb(236, 236, 236);
+  height: 100%;
+  height: 11em;
+  text-align: center;
+}
+
+.price {
+  font-size: 200%;
+}
+
+.price-title {
+  font-size: 120%;
+}
+
+.price-off {
+  font-size: 120%;
 }
 
 .center {
