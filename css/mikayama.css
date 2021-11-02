@@ -17,6 +17,7 @@
   background-image: url('../images/tatami.jpg');
   background-size: cover;
   padding-bottom: 5rem;
+  background-position: center;
 }
 
 .hero-logo {
