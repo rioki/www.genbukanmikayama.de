@@ -90,6 +90,41 @@
   font-size: 120%;
 }
 
+.swag-card,
+.book-card {
+  background-color: rgb(236, 236, 236);
+  display: flex; 
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.book-card {
+  min-height: 21em;
+}
+
+.swag-thumbnail,
+.book-thumbnail {
+  flex: 1; 
+  margin-right: 0.5em;
+}
+
+.swag-thumbnail img,
+.book-thumbnail img {
+  max-width: 100%;
+}
+
+.swag-description,
+.book-description {
+  flex: 1; 
+}
+
+.swag-title,
+.book-title 
+{
+  font-size: 150%;
+}
+
+
 .center {
   text-align: center;
 }
