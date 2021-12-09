@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/yt-consent.css">
     <link rel="stylesheet" href="css/mikayama.css">
-    <script src="js/leaflet.js"></script>
+    <script src="js/yt-consent.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -117,9 +118,9 @@
         <p>
           <a href="https://www.genbukan.eu/en/training/">Renshi Filip Poffé</a> hat eine umfangreiche Sammlung von Techniken zusammengestellt, die man im Genbukan System erlernen kann.
         </p>
-        <p class="center">
-          <a href="https://www.youtube.com/watch?v=ri4wEfCE-MA" ><img width="50%" src="/images/yt_demo_thumb.jpg"></a>
-        </p>
+        <div style="width: 50%; margin: 0 auto">
+          <div class="yt-link" data-video="ri4wEfCE-MA" data-thumbnail="https://i.ytimg.com/vi_webp/ri4wEfCE-MA/hqdefault.webp"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -386,15 +387,7 @@
     </div>
   </div>
   <script type="text/javascript">
-    var map = L.map('map').setView([49.02607, 8.44102], 15);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    L.marker([49.02607, 8.44102]).addTo(map)
-        .bindPopup('Dojo (Kampfsportraum) des SSC<br>Am Sportpark 5<br>76131 Karlsruhe')
-        .openPopup();
+    ytConsent();
   </script>
 </body>
 </html>
