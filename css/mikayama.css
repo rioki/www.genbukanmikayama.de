@@ -71,6 +71,10 @@
   font-size: 75%;
 }
 
+.event-date-time {
+  display: block; 
+}
+
 .price-block {
   background-color: rgb(236, 236, 236);
   height: 100%;
