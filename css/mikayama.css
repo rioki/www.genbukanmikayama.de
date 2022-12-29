@@ -140,6 +140,10 @@
   text-align: center;
 }
 
+.justify {
+  text-align: justify;
+}
+
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
