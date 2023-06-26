@@ -136,12 +136,21 @@
 }
 
 
-.center {
+.center,
+.text-center {
   text-align: center;
 }
 
 .justify {
   text-align: justify;
+}
+
+.w-400 {
+  max-width: 400px
+}
+
+.block-center {
+  margin: 0 auto;
 }
 
 /* Bigger than 550 */

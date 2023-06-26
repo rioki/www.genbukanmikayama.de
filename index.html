@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/skeleton.css">
     <link rel="stylesheet" href="/css/leaflet.css">
+    <link rel="stylesheet" href="/css/autolink.css">
     <link rel="stylesheet" href="/css/mikayama.css">
     <script src="js/leaflet.js"></script>
+    <script src="js/autolink.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -68,6 +70,39 @@
           <p class="section-description">
             <!--sse-->Hast Du sonst noch Fragen oder findest Du uns nicht? Ruf uns unter +49 176 588 74356 an oder 
             mail uns unter contact@genbukanmikayama.de.<!--/sse-->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section events">
+    <div class="container">
+      <h3 class="section-heading" id="termine">Termine</h3>
+      <div class="row event">
+        <div class="three columns">
+          <div class="event-date">
+            <span class="event-date-day">2.</span>
+            <span class="event-date-month">Juli</span>
+            <span class="event-date-year">2023</span>
+          </div>
+        </div>
+        <div class="nine columns">
+          <h4 class="event-heading autolink" id="seminar-2023-07-02">SSC Live! Waffen der Ninja</h4>
+          <p class="event-description text-center">
+            <a href="https://www.ssc-karlsruhe.de/cms/iwebs/default.aspx?&artikelId=7394"><img src="https://www.ssc-karlsruhe.de/cms/images/image561434.png" class="w-400"><br/>
+            Alle infos zum "SSC Live!" Event.
+            </a>
+          </p>
+          <table class="block-center">
+            <tr>
+              <th>12:00 - 13:30</th><td>Ninjutsu </td><td>Aktionsfläche im Park</td>
+            </tr>
+          </table>
+          <p class="event-description">
+            Entdecke die faszinierende Welt des japanischen Schwert-, Stock- und Shurikenkampfes mit unserer praktischen
+            Einführung! In diesem Kurs lernst du die Grundlagen dieser beeindruckenden Kampfkünste kennen. Wir vermitteln 
+            dir die richtige Technik, Haltung und Bewegung für den Schwert- und Stockkampf, damit du dich sicher und 
+            selbstbewusst fühlst.
           </p>
         </div>
       </div>
@@ -139,6 +174,9 @@
     L.marker([49.02607, 8.44102]).addTo(map)
         .bindPopup('Dojo (Kampfsportraum) des SSC<br>Am Sportpark 5<br>76131 Karlsruhe')
         .openPopup();
+  </script>
+  <script type="text/javascript">
+    autolink();
   </script>
 </body>
 </html>
