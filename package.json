@@ -1,0 +1,23 @@
+{
+  "name": "www.genbukanmikayama.de",
+  "description": "The official website of the Genbukan Mikayama Dojo.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp server",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rioki/www.genbukanmikayama.de.git"
+  },
+  "author": "Sean Farrell",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-twig": "^1.2.0",
+    "live-server": "^1.2.2"
+  }
+}
