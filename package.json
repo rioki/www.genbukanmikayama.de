@@ -18,6 +18,8 @@
     "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-twig": "^1.2.0",
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "braces": ">=3.0.3",
+    "micromatch": ">=4.0.8"
   }
 }
