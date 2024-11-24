@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="/css/fonts.css"> 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/leaflet.css">
+    <link rel="stylesheet" href="/css/yt-consent.css">
+    <link rel="stylesheet" href="/css/autolink.css">
     <link rel="stylesheet" href="/css/mikayama.css">
-    <script src="js/leaflet.js"></script>
+    <script src="/js/leaflet.js"></script>
+    <script src="/js/yt-consent.js"></script>
+    <script src="/js/autolink.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -33,32 +38,27 @@
         </div>
       </div>
     </div>
-  <div class="section error">
-    <div class="container">
-      <h3 class="section-heading">Verlaufen?</h3>
-      <p class="section-description">
-        Leider ist hier nicht das was du gesucht hast. Aber auf der
-        <a href="/">startseite</a> findest du vieleicht was du gesucht dast.
-      </p>
-      <p class="section-description"><a href="/" class="button button-primary">Zurück Zur Startseite</a></p>
+    {% block page %}{% endblock %}
+    <div class="section imprint center">
+      <div class="container">
+        <h3 class="section-heading">Impressum</h3>
+        <p class="section-description">Das Genbukan Mikajama Dojo is teil des <a href="https://www.ssc-karlsruhe.de/">Sport- und SchwimmClub Karlsruhe e.V.</a></p>
+        <p class="section-description">
+          Für diese Seite ist verantwortlich:<br/>
+          Sean Farrell<br/>
+          Amalienstr. 46<br/>
+          76133 Karlsruhe<br/>
+          Deutchland<br/>
+          <br/>
+          sean.farrell@rioki.org<br/>
+          +49 176 588 74356<br/>
+        </p>
+        <p class="section-description">Diese Seite verwendet keine cookies.</p>
+      </div>
     </div>
-  </div>
-  <div class="section imprint">
-    <div class="container">
-      <h3 class="section-heading">Impressum</h3>
-      <p class="section-description">Das Genbukan Mikajama Dojo is teil des <a href="https://www.ssc-karlsruhe.de/">Sport- und SchwimmClub Karlsruhe e.V.</a></p>
-      <p class="section-description">
-        Für diese Seite ist verantwortlich:<br/>
-        Sean Farrell<br/>
-        Amalienstr. 46<br/>
-        76133 Karlsruhe<br/>
-        Deutchland<br/>
-        <br/>
-        sean.farrell@rioki.org<br/>
-        +49 176 588 74356<br/>
-      </p>
-      <p class="section-description">Diese Seite verwendet keine cookies.</p>
-    </div>
-  </div>
-</body>
+    <script type="text/javascript">
+      ytConsent();
+      autolink();
+    </script>
+  </body>
 </html>
