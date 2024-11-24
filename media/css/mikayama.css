@@ -6,6 +6,10 @@
   color: #1EAEDB;
 }*/
 
+a, a:hover, a:visited {
+  color: red
+}
+
 .section {
   padding: 6rem 0 5rem;
   text-align: left;
@@ -21,10 +25,10 @@
 }
 
 .hero {
-  background-image: url('../images/tatami.jpg');
+  background-image: url('../images/DojoRed.jpg');
   background-size: cover;
   padding-bottom: 5rem;
-  background-position: center;
+  background-position: top;
 }
 
 .hero-logo {
