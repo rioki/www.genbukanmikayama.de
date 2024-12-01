@@ -2,7 +2,7 @@ name: Automated Code Review
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, edited]
 
 permissions:
   contents: read
@@ -25,7 +25,7 @@ jobs:
       - name: Custom Code Review and Comment
         uses: actions/github-script@v7
         env:
-          FILE_PATTERN: '*.cpp *.h *.md *.glsl *.yml *.json'
+          FILE_PATTERN: '*.html *.twig *.css *.js *.yml *.json'
           CUSTOM_PROMPT: 'Please review to following code changes:\n'
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
