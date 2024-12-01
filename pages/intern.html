@@ -1,578 +1,493 @@
 {% extends "layout.twig" %}
 
 {% block page %}
-  <div class="section disclaimer">
-    <div class="container">
-      <h2>Interne Infos</h2>
-      <p>
-        Falls du dich hierher verirrt hast: Dies sind die internen Infos des <a href="/">Gebnukan Mikayama Dojo</a>. 
-        Weitere Informationen über uns findest du auf der <a href="/">Hauptseite</a>.
-      </p>
-    </div>
+<div class="section disclaimer">
+  <div class="container">
+    <h2>Interne Infos</h2>
+    <p>
+      Falls du dich hierher verirrt hast: Dies sind die internen Infos des <a href="/">Gebnukan Mikayama Dojo</a>. 
+      Weitere Informationen über uns findest du auf der <a href="/">Hauptseite</a>.
+    </p>
   </div>
-  <div class="section sylabus">
-    <div class="container">
-      <h3 class="section-heading" id="syllabus">Lehrplan</h3>
-      <div class="row center">
-        <h4>Dojo Etiquette</h4>
-        <p>Zum Nachschlagen, hier eine Zusammenfassung der von uns gelebten Verhaltensregeln:</p>
-        <p><a href="/files/Dojo-Etiquette.pdf">Dojo-Etiquette.pdf</a></p>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <h4>Genbukan Taijutsu</h4>
-          <p>
-            Taijutsu ist die unbewaffnete Kampfkunst des Genbukan Ninjutsu. Dies
-            sind die Techniken, die du als Erstes bei uns erlernst.
-          </p>
-          <p>
-            Alle Schüler-Prüfungen können auf der <a href="https://genbukan.org/home/arts/genbukan-overview/genbukan-syllabus/">Genbukan Seite</a>
-            als PDF heruntergeladen werden.
-          </p>
-          <ul>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_10th_Kyu.pdf">Ninpo_10th_Kyu.pdf</a>
-                <a href="/files/Ninpo_Taijutsu_10_Kyu.pdf">(Deutsch)</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_9th_Kyu.pdf">Ninpo_9th_Kyu.pdf</a>
-                <a href="/files/Ninpo_Taijutsu_9_Kyu.pdf">(Deutsch)</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_8th_Kyu.pdf">Ninpo_8th_Kyu.pdf</a>
-                <a href="/files/Ninpo_Taijutsu_8_Kyu.pdf">(Deutsch)</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_7th_Kyu.pdf">Ninpo_7th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_6th_Kyu.pdf">Ninpo_6th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_5th_Kyu.pdf">Ninpo_5th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_4th_Kyu.pdf">Ninpo_4th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_3th_Kyu.pdf">Ninpo_3th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_2th_Kyu.pdf">Ninpo_2th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_1th_Kyu.pdf">Ninpo_1th_Kyu.pdf</a></li>
-          </ul>
-          <p>Es empfiehlt sich, das <a href="#ninpo-tajutsu-book">Genbukan Taijutsu-Buch</a> zu kaufen.</p>
-        </div>
-        <div class="one-half column">
-          <h4>Kokusai Jujutsu Renmi</h4>
-          <p>
-            Neben dem Ninjutsu lehren wir auch das Kokusai Jujutsu Renmi. 
-            Das KJJR ist die zivile Form des Taijutsu. Die KJJR Schule wurde geschaffen, 
-            um traditionales Jujutsu zu erhalten. 
-            Es wird erwartet, das jeder Genkukan Dan-Träger auch KJJR erlernt.
-          </p>
-          <p>
-            Alle Schüler-Prüfungen können auf der <a href="https://genbukan.org/home/arts/294-2/kokusai-jujutsu-renmei-syllabus/">Genbukan Seite</a>
-            als PDF heruntergeladen werden.
-          </p>
-          <ul>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_10th-9th_Kyu.pdf">KJJR_10th-9th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_8th-7th_Kyu.pdf">KJJR_8th-7th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_6th-4th_Kyu.pdf">KJJR_6th-4th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_3rd-2nd_Kyu.pdf">Ninpo_7th_Kyu.pdf</a></li>
-            <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_1st_Kyu.pdf">KJJR_1st_Kyu.pdf</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <h4>Hanbo Jutsu</h4>
-          <p>
-            Das Hanbo Jutsu ist die Kampfkunst mit dem Kurzstock (Hanbo). Prüfungen im Hanbo Jutsu können ab dem 4. Kyu Taijutsu abgelegt werden.
-          </p>
-          <ul>
-            <li>9. Kyu wird nachgereicht</li>
-          </ul>
-        </div>
-        <div class="one-half column">
-          <h4>Biken Jutsu</h4>
-          <p>
-            Das Biken Jutsu ist die Kampfkunst mit dem Schwert (Ken). Prüfungen im Biken Jutsu können ab dem 4. Kyu Taijutsu abgelegt werden.
-          </p>
-          <ul>
-            <li><a href="/files/Ninpo_Biken_9th_Kyu_Unofficial.pdf">Ninpo_Biken_9th_Kyu_Unofficial.pdf</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <h4>Weitere Waffen und Techniken</h4>
+</div>
+<div class="section sylabus">
+  <div class="container">
+    <h3 class="section-heading" id="syllabus">Lehrplan</h3>
+    <div class="row center">
+      <h4>Dojo Etiquette</h4>
+      <p>Zum Nachschlagen, hier eine Zusammenfassung der von uns gelebten Verhaltensregeln:</p>
+      <p><a href="/files/Dojo-Etiquette.pdf">Dojo-Etiquette.pdf</a></p>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <h4>Genbukan Taijutsu</h4>
         <p>
-          <a href="https://www.genbukan.eu/en/training/">Renshi Filip Poffé</a> hat eine umfangreiche Sammlung von Techniken zusammengestellt, die man im Genbukan System erlernen kann.
+          Taijutsu ist die unbewaffnete Kampfkunst des Genbukan Ninjutsu. Dies
+          sind die Techniken, die du als Erstes bei uns erlernst.
         </p>
-        <div style="width: 50%; margin: 0 auto">
-          <div class="yt-link" data-video="ri4wEfCE-MA" data-thumbnail="https://i.ytimg.com/vi_webp/ri4wEfCE-MA/hqdefault.webp"></div>
+        <p>
+          Alle Schüler-Prüfungen können auf der <a href="https://genbukan.org/home/arts/genbukan-overview/genbukan-syllabus/">Genbukan Seite</a>
+          als PDF heruntergeladen werden.
+        </p>
+        <ul>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_10th_Kyu.pdf">Ninpo_10th_Kyu.pdf</a>
+              <a href="/files/Ninpo_Taijutsu_10_Kyu.pdf">(Deutsch)</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_9th_Kyu.pdf">Ninpo_9th_Kyu.pdf</a>
+              <a href="/files/Ninpo_Taijutsu_9_Kyu.pdf">(Deutsch)</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_8th_Kyu.pdf">Ninpo_8th_Kyu.pdf</a>
+              <a href="/files/Ninpo_Taijutsu_8_Kyu.pdf">(Deutsch)</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_7th_Kyu.pdf">Ninpo_7th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_6th_Kyu.pdf">Ninpo_6th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_5th_Kyu.pdf">Ninpo_5th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_4th_Kyu.pdf">Ninpo_4th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_3th_Kyu.pdf">Ninpo_3th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_2th_Kyu.pdf">Ninpo_2th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/Ninpo_1th_Kyu.pdf">Ninpo_1th_Kyu.pdf</a></li>
+        </ul>
+        <p>Es empfiehlt sich, das <a href="#ninpo-tajutsu-book">Genbukan Taijutsu-Buch</a> zu kaufen.</p>
+      </div>
+      <div class="one-half column">
+        <h4>Kokusai Jujutsu Renmi</h4>
+        <p>
+          Neben dem Ninjutsu lehren wir auch das Kokusai Jujutsu Renmi. 
+          Das KJJR ist die zivile Form des Taijutsu. Die KJJR Schule wurde geschaffen, 
+          um traditionales Jujutsu zu erhalten. 
+          Es wird erwartet, das jeder Genkukan Dan-Träger auch KJJR erlernt.
+        </p>
+        <p>
+          Alle Schüler-Prüfungen können auf der <a href="https://genbukan.org/home/arts/294-2/kokusai-jujutsu-renmei-syllabus/">Genbukan Seite</a>
+          als PDF heruntergeladen werden.
+        </p>
+        <ul>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_10th-9th_Kyu.pdf">KJJR_10th-9th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_8th-7th_Kyu.pdf">KJJR_8th-7th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_6th-4th_Kyu.pdf">KJJR_6th-4th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_3rd-2nd_Kyu.pdf">Ninpo_7th_Kyu.pdf</a></li>
+          <li><a href="https://genbukan.org/wp-content/uploads/2022/05/KJJR_1st_Kyu.pdf">KJJR_1st_Kyu.pdf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <h4>Hanbo Jutsu</h4>
+        <p>
+          Das Hanbo Jutsu ist die Kampfkunst mit dem Kurzstock (Hanbo). Prüfungen im Hanbo Jutsu können ab dem 4. Kyu Taijutsu abgelegt werden.
+        </p>
+        <ul>
+          <li>9. Kyu wird nachgereicht</li>
+        </ul>
+      </div>
+      <div class="one-half column">
+        <h4>Biken Jutsu</h4>
+        <p>
+          Das Biken Jutsu ist die Kampfkunst mit dem Schwert (Ken). Prüfungen im Biken Jutsu können ab dem 4. Kyu Taijutsu abgelegt werden.
+        </p>
+        <ul>
+          <li><a href="/files/Ninpo_Biken_9th_Kyu_Unofficial.pdf">Ninpo_Biken_9th_Kyu_Unofficial.pdf</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <h4>Weitere Waffen und Techniken</h4>
+      <p>
+        <a href="https://www.genbukan.eu/en/training/">Renshi Filip Poffé</a> hat eine umfangreiche Sammlung von Techniken zusammengestellt, die man im Genbukan System erlernen kann.
+      </p>
+      <div style="width: 50%; margin: 0 auto">
+        <div class="yt-link" data-video="ri4wEfCE-MA" data-thumbnail="https://i.ytimg.com/vi_webp/ri4wEfCE-MA/hqdefault.webp"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section books">
+  <div class="container">
+    <h3 class="section-heading" id="books">Bücher</h3>
+    <p>
+      Alle Preise stammen aus dem <a href="https://genbukan.org/store/">Genbukan Shop</a> und wurden aus JPY 
+      umgerechnet. Es gibt keine Gewähr, dass die hier angegebenen Preise noch korrekt sind (Abweichungen bitte Sean melden).
+    </p>
+    <div class="row">
+      <div class="one-half column">
+        <div class="book-card" id="ninpo-tajutsu-book">
+          <div class="book-thumbnail">
+            <a href="https://genbukan.org/product/genbukan-ninpo-bugei-fundamental-taijutsu-en-ed"><img src="/images/Ninpo-Bugei-Vol.1-English.jpg"></a>
+          </div>
+          <div class="book-description">
+            <p class="book-title">Genbukan Ninpo Bugei Fundamental Taijutsu – En.Ed.</p>
+            <p>Preis: 31€</p>
+            <a class="button" href="https://genbukan.org/product/genbukan-ninpo-bugei-fundamental-taijutsu-en-ed">Zum Genbukan Shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="book-card" id="kjjr-book">
+          <div class="book-thumbnail">
+            <a href="https://genbukan.org/product/kjjr-jujutsu-volume-1"><img src="/images/KJJR-Jujutsu-Vol.1-Japanese-English.jpg"></a>
+          </div>
+          <div class="book-description">
+            <p class="book-title">KJJR Jujutsu Volume 1</p>
+            <p>Preis: 31€</p>
+            <a class="button" href="https://genbukan.org/product/kjjr-jujutsu-volume-1">Zum Genbukan Shop</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <div class="book-card" id="ninpo-tajutsu-book">
+          <div class="book-thumbnail">
+            <a href="https://genbukan.org/product/ninpo-secrets-new-edition-en-ed/"><img src="/images/Ninpo-Secrets-English.jpg"></a>
+          </div>
+          <div class="book-description">
+            <p class="book-title">Ninpo Secrets – English Edition</p>
+            <p>Preis: 31€</p>
+            <a class="button" href="https://genbukan.org/product/ninpo-secrets-new-edition-en-ed/">Zum Genbukan Shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="book-card" id="kjjr-book">
+          <div class="book-thumbnail">
+            <a href="https://genbukan.org/product/warrior-apprenticeship-with-the-grand-master"><img src="/images/Warrior-Apprenticeship.jpg"></a>
+          </div>
+          <div class="book-description">
+            <p class="book-title">Warrior Apprenticeship with the Grand Master</p>
+            <p>Preis: 31€</p>
+            <a class="button" href="https://genbukan.org/product/warrior-apprenticeship-with-the-grand-master">Zum Genbukan Shop</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!--sse-->
-  <div class="section events">
-    <div class="container">
-      <h3 class="section-heading" id="termine">Termine</h3>
-      <div class="row event">
-        <div class="three columns">
-          <div class="event-date">
-            <span class="event-date-day">19 / 23</span>
-            <span class="event-date-month">August</span>
-            <span class="event-date-year">2024</span>
+</div>
+<div class="section">
+  <div class="container">
+    <h3 class="section-heading" id="ausruestung">Ausrüstung</h3>
+    <p>
+      Alle links hier sind Vorschläge, gerne kannst du das Internet und deinen lokalen Sport-Laden nach 
+      alternativen durchsuchen.
+    </p>
+    <p>
+      Grundsätzlich brauchst du folgendes:
+    </p>
+    <div class="row">
+      <div class="one-half column">
+        <div class="swag-card" id="ninpo-tajutsu-book">
+          <div class="swag-thumbnail">
+            <a href="https://www.kwon.com/marken/danrho/69/danrho-ju-jutsu-anzug-shogun-plus-schwarz"><img src="/images/gi.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Jujutsu Gi in Schwarz</p>
+            <p>Preis: 30-60€</p>
+            <p>Ein beliebiger Jujutsu / Karate "Anzug" in schwarz tut es. (Darauf achten das er ein weissen Gürtel hat.)</p>
           </div>
         </div>
-        <div class="nine columns">
-          <h4 class="event-heading autolink" id="berlin-workshop-2024">Outdoor Workshop Berlin 2024</h4>
-          <p class="event-description">
-            Vom 19. bis 23. August 2024 veranstalten wir unseren ersten Outdoor Workshop 
-            in Berlin. Dieser Workshop bietet eine einzigartige Kombination aus täglichem 
-            Ninjutsu-Training und praktischen Wildnispädagogik-Sessions, darunter 
-            Fertigkeiten wie Feuermachen und Schleichen. Teilnehmer können sich auf ein 
-            intensives Lernerlebnis freuen, bei dem sie nicht nur ihre Kampfkunsttechniken 
-            verbessern, sondern auch wertvolles Wissen über das Überleben und die Bewegung 
-            in der Wildnis erwerben. Übernachtet wird in Zelten, was das Outdoor-Erlebnis 
-            komplettiert und die Teilnehmer näher an die Natur bringt. Dieser Workshop 
-            ist ideal für alle, die ihre Grenzen ausloten und in der Gemeinschaft 
-            Gleichgesinnter wachsen möchten.
-          </p>
-          <p class="event-description">
-            Mehr Innfos und Anmeldung unter genbukan-berlin@web.de
+      </div>
+      <div class="one-half column">
+        <div class="swag-card" id="kjjr-book">
+          <div class="swag-thumbnail">
+            <a href="https://www.kwon.com/marken/danrho/1234/danrho-judo/ju-jutsu-guertel-4-cm-breit?number=338004200"><img src="/images/guertel.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Gürtel (Grün)</p>
+            <p>Preis: 6€</p>
+            <p>Sobald du den 10. Kyu erreicht hast darfst du einen grünen Gürtel tragen.</p>
+          </div>
         </div>
       </div>
-      <div class="row event">
-        <div class="three columns">
-            <div class="event-date">
-                <span class="event-date-day">11. - 13.</span>
-                <span class="event-date-month">October</span>
-                <span class="event-date-year">2024</span>
-            </div>
+    </div>
+    <p>
+      Waffen sind allgemein, nice to have und wenn diese öfters eingesetzt werden,
+      macht es Sinn seine eignen zu haben. (In der Regel haben wir immer ein paar
+      Schüler Exemplare dabei.)
+    </p>
+    <div class="row">
+      <div class="one-half column">
+        <div class="swag-card" id="boken">
+          <div class="swag-thumbnail">
+            <a href="https://www.amazon.de/dp/B074TSFHHL"><img src="/images/boken.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Boken</p>
+            <p>Preis: 25€</p>
+            <p>Sobald man den 9. Kyu übt ist ein Boken sinnvoll.</p>
+          </div>
         </div>
-        <div class="nine columns">
-            <h4 class="event-heading autolink" id="ostende-2024">Ostende Seminar</h4>
-            <p class="event-description">
-                Vom 11. bis zum 13. Oktober lädt das Takai Shibu zum alljährlichen 
-                Oostende Seminar ein. Wie immer findet es in den 
-                <a href="https://maps.app.goo.gl/4189uWj51WFY1eMYA">Königlichen Stallingen</a> 
-                statt.
+      </div>
+      <div class="one-half column">
+        <div class="swag-card" id="hanbo">
+          <div class="swag-thumbnail">
+            <a href="https://www.amazon.de/dp/B09SJ3Y218/"><img src="/images/hanbo.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Hanbo</p>
+            <p>Preis: 25€</p>
+            <p>Ein Hanbo ist einfach nur ein 90cm stock.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <div class="swag-card" id="shinai">
+          <div class="swag-thumbnail">
+            <a href="https://www.amazon.de/dp/B076D74T5J/"><img src="/images/shinai.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Shinai</p>
+            <p>Preis: 30€</p>
+            <p>Das klassische japanische Übungsschwert. Tut leider immer noch etwas weh.</p>
+          </div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="swag-card" id="schaumstoff-shinai">
+          <div class="swag-thumbnail">
+            <a href="https://www.amazon.de/dp/B075FRV6JR/"><img src="/images/schaumstoff_shinai.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Schaumstoff Shinai</p>
+            <p>Preis: 28€</p>
+            <p>Tut nicht weh. Gibts für kleines Geld auch in Einzelteilen im Baumakt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <div class="swag-card" id="tanto">
+          <div class="swag-thumbnail">
+            <a href="https://www.amazon.de/dp/B00766X4E0"><img src="/images/tanto.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Tanto</p>
+            <p>Preis: 9€</p>
+            <p>Das Tanto ist ein Holz-Messer sinnvoll für Messer-Entwafnungs training.</p>
+          </div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="swag-card" id="schaumstoff_messer">
+          <div class="swag-thumbnail">
+            <a href="https://www.kwon.com/marken/kwon/2635/schaumstoffmesser-xpe"><img src="/images/schaumstoff_messer.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Schaumstoff Messer</p>
+            <p>Preis: 3€</p>
+            <p>Super für Messer Übungen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <div class="swag-card" id="tanto">
+          <div class="swag-thumbnail">
+            <a href="https://www.amazon.de/gp/product/B0777GKQT6/"><img src="/images/shuriken.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Shuriken (Gummi)</p>
+            <p>Preis: 20€</p>
+            <p>Shuriken: Spass für die ganze Familie; in Deutschland zugelassene Ausführung in Gummi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="swag-card" id="kubotan">
+          <div class="swag-thumbnail">
+            <a href="https://www.amazon.de/dp/B06XSJ5T45/"><img src="/images/kubotan.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Kubotan</p>
+            <p>Preis: 7€</p>
+            <p>Der perfekte Schlüsselanhänger für dunkle Gassen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      Sparing-Ausrüstung:
+    </p>
+    <div class="row">
+      <div class="one-half column">
+        <div class="swag-card" id="kopfschutz">
+          <div class="swag-thumbnail">
+            <a href="https://www.kwon.com/produkte/schutzausruestungen/kopfschutz/522/kopfschutz-kick-thai"><img src="/images/kopfschutz.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Kopfschutz</p>
+            <p>Preis: 40€</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="swag-card" id="hanbo">
+          <div class="swag-thumbnail">
+            <a href="https://www.kwon.com/produkte/schutzausruestungen/handschutz/571/sv-handschuhe/handschuetzer-virtus"><img src="/images/svhandschuhe.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">SV Handschuhe</p>
+            <p>Preis: 35€</p>
+            <p>Wichtig: es muss möglich sein den Gegner zu greifen; also keine Boxhandschuhe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <div class="swag-card" id="kopfschutz">
+          <div class="swag-thumbnail">
+            <a href="https://www.kwon.com/produkte/schutzausruestungen/zahnschutz/2216/zahnschutz-challenge-mit-box"><img src="/images/zahnschutz.jpg"></a>
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Zahnschutz</p>
+            <p>Preis: 30€</p>
+            <p>Zahnschutz ist wichtig; viele hässliche Verletzungen können durch ein Schlag auf dem Mund entstehen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="one-half column">
+    </div>
+  </div>
+  </div>
+</div>
+<div class="section fees">
+  <div class="container">
+    <h3 class="section-heading" id="fees">Genbukan Gebühren</h3>
+    <p class="section-description">
+      Alle Gebühren sind aus JPY umgerechnet und gerundet. Änderungen aufgrund 
+      von Kursschwankungen vorbehalten.
+    </p>
+    <div class="row">
+      <div class="one-half column">
+        <table class="u-full-width">
+          <tbody>
+            <tr>
+              <td>Anmeldung</td>
+              <td>40€</td>
+            </tr>
+            <tr>
+              <td>Jahresgebühr Schüler</td>
+              <td>35€</td>
+            </tr>
+            <tr>
+              <td>Jahresgebühr Dan-Träger</td>
+              <td>110€</td>
+            </tr>
+            <tr>
+              <td>Jahresgebühr Dojo-Cho</td>
+              <td>140€</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="section-description">
+          Alle Anmelde- und Jahresgebühren werden für SSC-Mitgleider vom SSC übernommen.
+        </p>
+      </div>
+      <div class="one-half column">
+        <table class="u-full-width">
+          <tbody>
+            <tr>
+              <td>Prüfung 9. - 4. Kyu</td>
+              <td>30€</td>
+            </tr>
+            <tr>
+              <td>Prüfung 3. - 1. Kyu</td>
+              <td>40€</td>
+            </tr>
+            <tr>
+              <td>Prüfung Shodan</td>
+              <td>100€</td>
+            </tr>
+            <tr>
+              <td>Prüfung Ni Dan</td>
+              <td>150€</td>
+            </tr>
+            <tr>
+              <td>Prüfung San Dan</td>
+              <td>200€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section swag">
+  <div class="container">
+    <h3 class="section-heading" id="swag">Swag</h3>
+    <p>
+      Sämtlicher Mikayama-Swag wird zum Selbstkostenpreis bei <a href="https://www.shirtlabor.de/">Shirtlabor</a> bestellt. 
+      Bei interesse Sean ansprechen.
+      Wenn du etwas im Shop siehst (z.B Trinkflasche), hier aber nicht, können wir gerne zusammen ein neues "Produkt" designen.
+    </p>
+    <p>
+      (Achtung: Die Produkte auf der Webseite sind ohne Druck. Sobald etwas draufgedruckt werden soll, steigt der Preis.)
+    </p>
+    <div class="row">
+      <div class="one-half column">
+        <div class="swag-card" id="swag-tshirt">
+          <div class="swag-thumbnail">
+            <img src="/images/swag_t_shirt.jpg">
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Unisex T-Shirt</p>
+            <p>
+              Preis: 19€<br>
+              Grössen: XS - 5XL<br>
+              100% Baumwolle
             </p>
-            <p class="event-description">
-                <table>
-                    <tr>
-                        <th>Tag</th><th>Veranstaltung</th><th>Uhrzeit</th><th>Gebühr</th>
-                    </tr>
-                    <tr>
-                        <td>Freitag</td><td>Kyu und Dan Training</td><td>14:00 - 18:00</td><td>€25</td>
-                    </tr>
-                    <tr>
-                        <td>Freitag</td><td>Gemeinsames Abendessen</td><td>Abends</td><td></td>
-                    </tr>
-                    <tr>
-                        <td>Samstag</td><td>Seminar Tag 1</td><td>9:00 - 17:00</td><td>€35</td>
-                    </tr>
-                    <tr>
-                        <td>Samstag</td><td>Banquet</td><td>Abends</td><td></td>
-                    </tr>
-                    <tr>
-                        <td>Sonntag</td><td>Seminar Tag 2</td><td>9:00 - 14:30</td><td>€30</td>
-                    </tr>
-                </table>
+          </div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="swag-card" id="swag-hoody">
+          <div class="swag-thumbnail">
+            <img src="/images/swag_jacket_hood.jpg">
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Kaputzenjacke (Herren)</p>
+            <p>
+              Preis: 42€<br>
+              Grössen: XS - 4XL<br>
+              100% Baumwolle
             </p>
-            <p class="event-description">
-                Wie jedes Jahr fahren wir, wenn es sich ergibt, in einer Fahrgemeinschaft
-                und mieten eine gemeinsame Ferienwohnung. Das gesamte Wochenende wird, 
-                inklusive Essen, ca. 200 EUR kosten. Für die, die es brauchen,
-                hat Sebastian natürlich einen Sondertarif. 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <div class="swag-card" id="swag-funcshirt">
+          <div class="swag-thumbnail">
+            <img src="/images/swag_function_tshirtin.jpg">
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Funktionsshirt (Damen)</p>
+            <p>
+              Preis: 22€<br>
+              Grössen: XS - 5XL<br>
+              100% Viscose
             </p>
-            <p class="event-description">
-                Wer Interesse hat, soll sich vor Ende August bei Sean melden. 
+          </div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="swag-card" id="swag-funcshirt">
+          <div class="swag-thumbnail">
+            <img src="/images/swag_function_tshirt.jpg">
+          </div>
+          <div class="swag-description">
+            <p class="swag-title">Funktionsshirt (Herren)</p>
+            <p>
+              Preis: 22€<br>
+              Grössen: XS - 5XL<br>
+              100% Viscose
             </p>
-        </div>
-      </div>
-    
-      <!--<div class="row event">
-        Das nächste Seminar kommt bestimmt.
-      </div>-->
-    </div>
-  </div>
-  <!--/sse-->
-  <div class="section books">
-    <div class="container">
-      <h3 class="section-heading" id="books">Bücher</h3>
-      <p>
-        Alle Preise stammen aus dem <a href="https://genbukan.org/store/">Genbukan Shop</a> und wurden aus JPY 
-        umgerechnet. Es gibt keine Gewähr, dass die hier angegebenen Preise noch korrekt sind (Abweichungen bitte Sean melden).
-      </p>
-      <div class="row">
-        <div class="one-half column">
-          <div class="book-card" id="ninpo-tajutsu-book">
-            <div class="book-thumbnail">
-              <a href="https://genbukan.org/product/genbukan-ninpo-bugei-fundamental-taijutsu-en-ed"><img src="/images/Ninpo-Bugei-Vol.1-English.jpg"></a>
-            </div>
-            <div class="book-description">
-              <p class="book-title">Genbukan Ninpo Bugei Fundamental Taijutsu – En.Ed.</p>
-              <p>Preis: 31€</p>
-              <a class="button" href="https://genbukan.org/product/genbukan-ninpo-bugei-fundamental-taijutsu-en-ed">Zum Genbukan Shop</a>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="book-card" id="kjjr-book">
-            <div class="book-thumbnail">
-              <a href="https://genbukan.org/product/kjjr-jujutsu-volume-1"><img src="/images/KJJR-Jujutsu-Vol.1-Japanese-English.jpg"></a>
-            </div>
-            <div class="book-description">
-              <p class="book-title">KJJR Jujutsu Volume 1</p>
-              <p>Preis: 31€</p>
-              <a class="button" href="https://genbukan.org/product/kjjr-jujutsu-volume-1">Zum Genbukan Shop</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <div class="book-card" id="ninpo-tajutsu-book">
-            <div class="book-thumbnail">
-              <a href="https://genbukan.org/product/ninpo-secrets-new-edition-en-ed/"><img src="/images/Ninpo-Secrets-English.jpg"></a>
-            </div>
-            <div class="book-description">
-              <p class="book-title">Ninpo Secrets – English Edition</p>
-              <p>Preis: 31€</p>
-              <a class="button" href="https://genbukan.org/product/ninpo-secrets-new-edition-en-ed/">Zum Genbukan Shop</a>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="book-card" id="kjjr-book">
-            <div class="book-thumbnail">
-              <a href="https://genbukan.org/product/warrior-apprenticeship-with-the-grand-master"><img src="/images/Warrior-Apprenticeship.jpg"></a>
-            </div>
-            <div class="book-description">
-              <p class="book-title">Warrior Apprenticeship with the Grand Master</p>
-              <p>Preis: 31€</p>
-              <a class="button" href="https://genbukan.org/product/warrior-apprenticeship-with-the-grand-master">Zum Genbukan Shop</a>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="section books">
-    <div class="container">
-      <h3 class="section-heading" id="ausruestung">Ausrüstung</h3>
-      <p>
-        Alle links hier sind Vorschläge, gerne kannst du das Internet und deinen lokalen Sport-Laden nach 
-        alternativen durchsuchen.
-      </p>
-      <p>
-        Grundsätzlich brauchst du folgendes:
-      </p>
-      <div class="row">
-        <div class="one-half column">
-          <div class="swag-card" id="ninpo-tajutsu-book">
-            <div class="swag-thumbnail">
-              <a href="https://www.kwon.com/marken/danrho/69/danrho-ju-jutsu-anzug-shogun-plus-schwarz"><img src="/images/gi.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Jujutsu Gi in Schwarz</p>
-              <p>Preis: 30-60€</p>
-              <p>Ein beliebiger Jujutsu / Karate "Anzug" in schwarz tut es. (Darauf achten das er ein weissen Gürtel hat.)</p>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="swag-card" id="kjjr-book">
-            <div class="swag-thumbnail">
-              <a href="https://www.kwon.com/marken/danrho/1234/danrho-judo/ju-jutsu-guertel-4-cm-breit?number=338004200"><img src="/images/guertel.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Gürtel (Grün)</p>
-              <p>Preis: 6€</p>
-              <p>Sobald du den 10. Kyu erreicht hast darfst du einen grünen Gürtel tragen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p>
-        Waffen sind allgemein, nice to have und wenn diese öfters eingesetzt werden,
-        macht es Sinn seine eignen zu haben. (In der Regel haben wir immer ein paar
-        Schüler Exemplare dabei.)
-      </p>
-      <div class="row">
-        <div class="one-half column">
-          <div class="swag-card" id="boken">
-            <div class="swag-thumbnail">
-              <a href="https://www.amazon.de/dp/B074TSFHHL"><img src="/images/boken.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Boken</p>
-              <p>Preis: 25€</p>
-              <p>Sobald man den 9. Kyu übt ist ein Boken sinnvoll.</p>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="swag-card" id="hanbo">
-            <div class="swag-thumbnail">
-              <a href="https://www.amazon.de/dp/B09SJ3Y218/"><img src="/images/hanbo.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Hanbo</p>
-              <p>Preis: 25€</p>
-              <p>Ein Hanbo ist einfach nur ein 90cm stock.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <div class="swag-card" id="shinai">
-            <div class="swag-thumbnail">
-              <a href="https://www.amazon.de/dp/B076D74T5J/"><img src="/images/shinai.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Shinai</p>
-              <p>Preis: 30€</p>
-              <p>Das klassische japanische Übungsschwert. Tut leider immer noch etwas weh.</p>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="swag-card" id="schaumstoff-shinai">
-            <div class="swag-thumbnail">
-              <a href="https://www.amazon.de/dp/B075FRV6JR/"><img src="/images/schaumstoff_shinai.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Schaumstoff Shinai</p>
-              <p>Preis: 28€</p>
-              <p>Tut nicht weh. Gibts für kleines Geld auch in Einzelteilen im Baumakt.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <div class="swag-card" id="tanto">
-            <div class="swag-thumbnail">
-              <a href="https://www.amazon.de/dp/B00766X4E0"><img src="/images/tanto.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Tanto</p>
-              <p>Preis: 9€</p>
-              <p>Das Tanto ist ein Holz-Messer sinnvoll für Messer-Entwafnungs training.</p>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="swag-card" id="schaumstoff_messer">
-            <div class="swag-thumbnail">
-              <a href="https://www.kwon.com/marken/kwon/2635/schaumstoffmesser-xpe"><img src="/images/schaumstoff_messer.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Schaumstoff Messer</p>
-              <p>Preis: 3€</p>
-              <p>Super für Messer Übungen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <div class="swag-card" id="tanto">
-            <div class="swag-thumbnail">
-              <a href="https://www.amazon.de/gp/product/B0777GKQT6/"><img src="/images/shuriken.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Shuriken (Gummi)</p>
-              <p>Preis: 20€</p>
-              <p>Shuriken: Spass für die ganze Familie; in Deutschland zugelassene Ausführung in Gummi.</p>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="swag-card" id="kubotan">
-            <div class="swag-thumbnail">
-              <a href="https://www.amazon.de/dp/B06XSJ5T45/"><img src="/images/kubotan.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Kubotan</p>
-              <p>Preis: 7€</p>
-              <p>Der perfekte Schlüsselanhänger für dunkle Gassen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p>
-        Sparing-Ausrüstung:
-      </p>
-      <div class="row">
-        <div class="one-half column">
-          <div class="swag-card" id="kopfschutz">
-            <div class="swag-thumbnail">
-              <a href="https://www.kwon.com/produkte/schutzausruestungen/kopfschutz/522/kopfschutz-kick-thai"><img src="/images/kopfschutz.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Kopfschutz</p>
-              <p>Preis: 40€</p>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="swag-card" id="hanbo">
-            <div class="swag-thumbnail">
-              <a href="https://www.kwon.com/produkte/schutzausruestungen/handschutz/571/sv-handschuhe/handschuetzer-virtus"><img src="/images/svhandschuhe.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">SV Handschuhe</p>
-              <p>Preis: 35€</p>
-              <p>Wichtig: es muss möglich sein den Gegner zu greifen; also keine Boxhandschuhe.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <div class="swag-card" id="kopfschutz">
-            <div class="swag-thumbnail">
-              <a href="https://www.kwon.com/produkte/schutzausruestungen/zahnschutz/2216/zahnschutz-challenge-mit-box"><img src="/images/zahnschutz.jpg"></a>
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Zahnschutz</p>
-              <p>Preis: 30€</p>
-              <p>Zahnschutz ist wichtig; viele hässliche Verletzungen können durch ein Schlag auf dem Mund entstehen.</p>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-      </div>
-    </div>
-  </div>
-  <div class="section fees">
-    <div class="container">
-      <h3 class="section-heading" id="fees">Genbukan Gebühren</h3>
-      <p class="section-description">
-        Alle Gebühren sind aus JPY umgerechnet und gerundet. Änderungen aufgrund 
-        von Kursschwankungen vorbehalten.
-      </p>
-      <div class="row">
-        <div class="one-half column">
-          <table class="u-full-width">
-            <tbody>
-              <tr>
-                <td>Anmeldung</td>
-                <td>40€</td>
-              </tr>
-              <tr>
-                <td>Jahresgebühr Schüler</td>
-                <td>35€</td>
-              </tr>
-              <tr>
-                <td>Jahresgebühr Dan-Träger</td>
-                <td>110€</td>
-              </tr>
-              <tr>
-                <td>Jahresgebühr Dojo-Cho</td>
-                <td>140€</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="section-description">
-            Alle Anmelde- und Jahresgebühren werden für SSC-Mitgleider vom SSC übernommen.
-          </p>
-        </div>
-        <div class="one-half column">
-          <table class="u-full-width">
-            <tbody>
-              <tr>
-                <td>Prüfung 9. - 4. Kyu</td>
-                <td>30€</td>
-              </tr>
-              <tr>
-                <td>Prüfung 3. - 1. Kyu</td>
-                <td>40€</td>
-              </tr>
-              <tr>
-                <td>Prüfung Shodan</td>
-                <td>100€</td>
-              </tr>
-              <tr>
-                <td>Prüfung Ni Dan</td>
-                <td>150€</td>
-              </tr>
-              <tr>
-                <td>Prüfung San Dan</td>
-                <td>200€</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="section swag">
-    <div class="container">
-      <h3 class="section-heading" id="swag">Swag</h3>
-      <p>
-        Sämtlicher Mikayama-Swag wird zum Selbstkostenpreis bei <a href="https://www.shirtlabor.de/">Shirtlabor</a> bestellt. 
-        Bei interesse Sean ansprechen.
-        Wenn du etwas im Shop siehst (z.B Trinkflasche), hier aber nicht, können wir gerne zusammen ein neues "Produkt" designen.
-      </p>
-      <p>
-        (Achtung: Die Produkte auf der Webseite sind ohne Druck. Sobald etwas draufgedruckt werden soll, steigt der Preis.)
-      </p>
-      <div class="row">
-        <div class="one-half column">
-          <div class="swag-card" id="swag-tshirt">
-            <div class="swag-thumbnail">
-              <img src="/images/swag_t_shirt.jpg">
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Unisex T-Shirt</p>
-              <p>
-                Preis: 19€<br>
-                Grössen: XS - 5XL<br>
-                100% Baumwolle
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="swag-card" id="swag-hoody">
-            <div class="swag-thumbnail">
-              <img src="/images/swag_jacket_hood.jpg">
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Kaputzenjacke (Herren)</p>
-              <p>
-                Preis: 42€<br>
-                Grössen: XS - 4XL<br>
-                100% Baumwolle
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-half column">
-          <div class="swag-card" id="swag-funcshirt">
-            <div class="swag-thumbnail">
-              <img src="/images/swag_function_tshirtin.jpg">
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Funktionsshirt (Damen)</p>
-              <p>
-                Preis: 22€<br>
-                Grössen: XS - 5XL<br>
-                100% Viscose
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="one-half column">
-          <div class="swag-card" id="swag-funcshirt">
-            <div class="swag-thumbnail">
-              <img src="/images/swag_function_tshirt.jpg">
-            </div>
-            <div class="swag-description">
-              <p class="swag-title">Funktionsshirt (Herren)</p>
-              <p>
-                Preis: 22€<br>
-                Grössen: XS - 5XL<br>
-                100% Viscose
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 {% endblock %}

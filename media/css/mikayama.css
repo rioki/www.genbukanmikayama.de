@@ -1,13 +1,20 @@
 
-/*.permalink {
-  font-size: 12pt;
-  vertical-align: top;
-  text-decoration: none;
-  color: #1EAEDB;
-}*/
+body {
+  --emphasis: rgb(214, 0, 0);
+  --background: rgb(39, 39, 39);
+  --background-secondary: rgb(73, 73, 73);
+  --text: rgb(241, 241, 241);
+  --text-secondary: rgb(241, 241, 241);
+  
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+}
 
 a, a:hover, a:visited {
-  color: red;
+  color: var(--emphasis);
 }
 
 img.responsive {
@@ -52,7 +59,7 @@ img.responsive {
 
 
 .imprint {
-  background-color: rgb(236, 236, 236);
+  background-color: var(--background-secondary);
 }
 
 .event {
@@ -62,7 +69,7 @@ img.responsive {
 .event-date {
   margin: 0 auto;
   width: 8em;
-  background-color: rgb(236, 236, 236);
+  background-color: var(--background-secondary);
 }
 
 .event-heading {
@@ -92,7 +99,7 @@ img.responsive {
 }
 
 .price-block {
-  background-color: rgb(236, 236, 236);
+  background-color: var(--background-secondary);
   height: 100%;
   height: 11em;
   text-align: center;
@@ -112,7 +119,7 @@ img.responsive {
 
 .swag-card,
 .book-card {
-  background-color: rgb(236, 236, 236);
+  background-color: var(--background-secondary);
   display: flex; 
   padding: 0.5em;
   margin-bottom: 1em;
@@ -211,5 +218,5 @@ img.responsive {
 }
 
 .leaflet-container a {
-  color: red;
+  color: var(--emphasis);
 }
