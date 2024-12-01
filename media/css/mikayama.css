@@ -7,7 +7,12 @@
 }*/
 
 a, a:hover, a:visited {
-  color: red
+  color: red;
+}
+
+img.responsive {
+  width: 100%;
+  height: auto;
 }
 
 .section {
@@ -199,4 +204,12 @@ a, a:hover, a:visited {
   .hero-heading {
     font-size: 3.0rem;
   }
+}
+
+.leaflet-tile-pane {
+  filter: grayscale(90%);
+}
+
+.leaflet-container a {
+  color: red;
 }
