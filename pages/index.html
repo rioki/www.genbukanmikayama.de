@@ -1,107 +1,105 @@
 {% extends "layout.twig" %}
 
 {% block page %}
-  <div class="section">
-    <div class="container">
-      <div class="one-half column">
-        <h3 class="section-heading" id="systeme">Ninpo</h3>
-        <p class="section-description center">
-          <a href="https://genbukan.org/">Ninpo</a>, auch bekannt als Ninjutsu, ist eine von 
-          <a href="https://genbukan.org/the-grandmaster/sokes-history/">Großmeister Tanemura</a> gegründete Kampfkunstschule, 
-          die dir den unbewaffneten und bewaffneten Kampf aus <a href="https://genbukan.de/kampfkuenste.html">allen 36 Schulen</a>
+<article class="no-padding border">
+  <img class="responsive" src="/images/DojoRed.jpg">
+  <div class="absolute bottom left right padding black-text grid large-space">
+    <div class="s2">
+      <img class="responsive" src="/images/mikayama.png">
+    </div>
+    <div class="s10">
+      <h5>Genbukan Mikayama Dojo</h5>
+      <p>Dein Ninjutsu Dojo in Karlsruhe.</p>
+    </div>
+  </div>
+</article>
+<div class="grid large-space">
+  <div class="s4">
+    <article class="no-padding round secondary">
+      <img class="responsive large top-round" src="/images/kjjr.jpg">
+        <div class="padding">
+        <h5 id="jujutsu">Jujutsu</h5>
+        <p>
+          <a href="https://genbukan.org/systems/kokusai-jujutsu-renmei/" class="link">Kokusai Jujutsu Renmei</a> ist eine traditionelle Jujustu-Schule 
+            die ihre Techniken vom Genbukan Ninjustsu ableitet. 
+            KJJR ist im Vergleich zum Ninjutsu einfacher zu lernen. Diese
+            Jujustu-Schule wurde von <a href="https://genbukan.org/the-grandmaster/sokes-history/" class="link">Großmeister Tanemura</a> 
+            gegründet, um authentisches traditionelles Jujustsu zu lehren, da er fühlte, das moderne Jujustu-Richtungen zu 
+            verwässert wurden.
+        </p>
+      </div>
+    </article>
+  </div>
+  <div class="s4">
+    <article class="no-padding round secondary">
+      <img class="responsive large top-round" src="/images/biken.jpg">
+        <div class="padding">
+        <h5 id="ninpo">Ninpo</h5>
+        <p>
+          <a href="https://genbukan.org/" class="link">Ninpo</a>, auch bekannt als Ninjutsu, ist eine von 
+          <a href="https://genbukan.org/the-grandmaster/sokes-history/" class="link">Großmeister Tanemura</a> gegründete Kampfkunstschule, 
+          die dir den unbewaffneten und bewaffneten Kampf aus <a href="https://genbukan.de/kampfkuenste.html" class="link">allen 36 Schulen</a>
           der Ninja näherbringt. Angefangen bei Tai-Jutsu (Unbewaffnet), über Waffenkünste wie Hanbo-Jutsu (Kurzstock), 
           Biken-Jutsu (Schwert) bis zum Shuriken-Jutsu (Wurfmesser und Wurfstern), 
-          können bei uns erlernt werden. 
+          können bei uns erlernt werden.
         </p>
       </div>
-      <div class="one-half column">
-        <h3 class="section-heading" id="jujutsu">Jujutsu</h3>
-        <p class="section-description center">
-          <a href="https://genbukan.org/systems/kokusai-jujutsu-renmei/">Kokusai Jujutsu Renmei</a> ist eine traditionelle Jujustu-Schule 
-          die ihre Techniken vom Genbukan Ninjustsu ableitet. 
-          KJJR ist im Vergleich zum Ninjutsu einfacher zu lernen. Diese
-          Jujustu-Schule wurde von <a href="https://genbukan.org/the-grandmaster/sokes-history/">Großmeister Tanemura</a> 
-          gegründet, um authentisches traditionelles Jujustsu zu lehren, da er fühlte, das moderne Jujustu-Richtungen zu 
-          verwässert wurden.
+    </article>
+  </div>
+  <div class="s4">
+    <article class="no-padding round secondary">
+      <img class="responsive large top-round" src="/images/tds.jpg">
+        <div class="padding">
+        <h5 id="ninpo">Tactical Defense System</h5>
+        <p>
+          Das <a href="https://tactical-defense-system.com/" class="link">Tactical Defense System</a>, entwickelt von 
+          Kyoshi Aerts, ist eine moderne Selbstverteidigungsmethode, die auf dem Ninpo basiert. Es verbindet leicht 
+          erlernbare Techniken mit einem ganzheitlichen Ansatz und ist in unterschiedlichsten Situationen anwendbar. 
+          Ziel ist es, schnell und effektiv auf Bedrohungen zu reagieren, ohne komplexe Abläufe zu erfordern.
         </p>
       </div>
-    </div>
+    </article>
   </div>
-  <div class="section traning">
-    <div class="container">
-      <h3 class="section-heading" id="training">Training</h3>
-      <div class="row">
-        <div class="one-half column">
-          <div id="map" style="height:100%;min-height:350px;border:1px  solid black"></div>
-        </div>
-        <div class="one-half column">
-          <p class="section-description">
-            <!--sse-->Das Traning findet jeden Dienstag um 20:30 im Dojo des 
-            <a href="https://www.ssc-karlsruhe.de/">SSC</a> stat.<!--/sse-->
-          </p>
-          <h5 class="section-description">Schnupper Training</h5>
-          <p class="section-description">
-            Unsicher ob Ninjutsu etwas für Dich ist? Komm gern zu einem Schnuppertraining vorbei. Du brauchst feste 
-            Sportkleidung und etwas zu Trinken. Es ist kein spezielles Schuhwerk notwendig, da das Training barfuss 
-            oder in Socken stattfindet.
-          </p>
-          <p class="section-description">
-            Das Dojo findest du im SSC Hauptgebäude (Am Sportpark 5). Durch den Haupteingang rein,
-            rechts die grüne Wendeltreppe in den Keller und Schilder für Judo folgen. Das Dojo
-            ist rechts, die Tür sollte offen sein und es sieht sehr offensichtlich wie ein 
-            Kampfsport Dojo aus.
-          </p>
-          <p class="section-description">
-            <!--sse-->Hast Du sonst noch Fragen oder findest Du uns nicht? Ruf mich an oder chatte mit mir via 
-            WhatApp unter +49 176 588 74356 oder schreib mit eine Mail unter sean.farrell@genbukanmikayama.de.<!--/sse-->
-          </p>
-        </div>
-      </div>
-    </div>
+</div>
+<div class="grid large-space">
+  <div class="s6">
+    <div id="map" style="height:100%;min-height:350px;border:1px  solid black"></div>
   </div>
-  <div class="section fees">
-    <div class="container">
-      <h3 class="section-heading" id="seminare">Mitgliedsbeiträge</h3>
-      <div class="row">
-        <div class="two-thirds column">
-          <p class="section-description">
-            Das Mikajama Dojo ist Teil des <a href="https://www.ssc-karlsruhe.de/">Sport- und SchwimmClub Karlsruhe e.V.</a>
-            und somit ist eine Mitgliedschaft in SSC Voraussetzung. 
-          </p>
-          <p>
-            Des Weiteren muss eine Mitgliedschaft in der <a href="https://genbukan.org/">Genbukan World Ninpo Bugei Federation</a> 
-            beantragt werden, die Gebühren hierfür werden vom SSC übernommen.
-          </p>
-        </div>
-        <div class="one-third column">
-          <div class="price-block">
-            <div class="price-title">Sport- und SchwimmClub Karlsruhe e.V.</div>
-            <div>
-              <span class="price">19,50 €</span> / Monat*<br>
-              * Quartalszahlung: Abbuchung 58,50 €<br>
-              <a href="https://www.ssc-karlsruhe.de/Verein/Mitgliedwerden/">Ermäsigte und Famileintarife</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="s6">
+    <article>
+      <h5 id="jujutsu">Training</h5>
+      <p class="section-description">
+        <!--sse-->Das Traning findet jeden Dienstag um 20:30 im Dojo des 
+        <a href="https://www.ssc-karlsruhe.de/">SSC</a> stat.<!--/sse-->
+      </p>
+      <h5 class="section-description">Schnupper Training</h5>
+      <p class="section-description">
+        Unsicher ob Ninjutsu etwas für Dich ist? Komm gern zu einem Schnuppertraining vorbei. Du brauchst feste 
+        Sportkleidung und etwas zu Trinken. Es ist kein spezielles Schuhwerk notwendig, da das Training barfuss 
+        oder in Socken stattfindet.
+      </p>
+      <p class="section-description">
+        Das Dojo findest du im SSC Hauptgebäude (Am Sportpark 5). Durch den Haupteingang rein,
+        rechts die grüne Wendeltreppe in den Keller und Schilder für Judo folgen. Das Dojo
+        ist rechts, die Tür sollte offen sein und es sieht sehr offensichtlich wie ein 
+        Kampfsport Dojo aus.
+      </p>
+      <p class="section-description">
+        <!--sse-->Hast Du sonst noch Fragen oder findest Du uns nicht? Ruf mich an oder chatte mit mir via 
+        WhatApp unter +49 176 588 74356 oder schreib mit eine Mail unter sean.farrell@genbukanmikayama.de.<!--/sse-->
+      </p>
+    </article>
   </div>
-  <div class="section intern">
-    <div class="container">
-      <h3 class="section-heading" id="seminare">Interne Infos</h3>
-      <p class="section-description center">Für unsere Mitglieder weitere Infos:</p>
-      <p class="section-description center"><a class="button"  href="intern.html">Interne Infos</a></p>
-    </div>
-  </div>
-  <script type="text/javascript">
-    var map = L.map('map').setView([49.02607, 8.44102], 15);
+</div>
+<script type="text/javascript">
+  var map = L.map('map').setView([49.02607, 8.44102], 15);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
 
-    L.marker([49.02607, 8.44102]).addTo(map)
-        .bindPopup('Dojo (Kampfsportraum) des SSC<br>Am Sportpark 5<br>76131 Karlsruhe')
-        .openPopup();
-  </script>
+  L.marker([49.02607, 8.44102]).addTo(map)
+      .bindPopup('Dojo (Kampfsportraum) des SSC<br>Am Sportpark 5<br>76131 Karlsruhe')
+      .openPopup();
+</script>
 {% endblock %}

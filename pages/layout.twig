@@ -6,13 +6,12 @@
     <meta name="description" content="Genbukan Mikayama Dojo">
     <meta name="author" content="Sean Farrell">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/fonts.css"> 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/skeleton.css">
-    <link rel="stylesheet" href="/css/leaflet.css">
-    <link rel="stylesheet" href="/css/yt-consent.css">
-    <link rel="stylesheet" href="/css/autolink.css">
-    <link rel="stylesheet" href="/css/mikayama.css">
+    <link href="/beer/beer.css" rel="stylesheet">
+    <link href="/css/mikayama.css" rel="stylesheet">
+    <link href="/css/leaflet.css" rel="stylesheet">
+    <link href="/css/autolink.css" rel="stylesheet">
+    <link href="/css/yt-consent.css" rel="stylesheet">
+    <script type="module" src="/beer/beer.js"></script>
     <script src="/js/leaflet.js"></script>
     <script src="/js/yt-consent.js"></script>
     <script src="/js/autolink.js"></script>
@@ -21,30 +20,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
   </head>
-  <body>
-    <div class="section hero">
-      <div class="container">
-        <div class="row">
-          <div class="one-third column hero-logo">
-            <img class="logo" src="images/genbukan.png">
-          </div>
-          <div class="one-third column hero-text">
-            <h3 class="hero-heading">Mikayama Dojo</h3>
-            <p class="hero-description">Das Genbukan Ninjutsu Dojo in Karlsruhe.</p>
-          </div>
-          <div class="one-third column hero-logo">
-            <img class="logo" src="images/mikayama.png">
-          </div>
-        </div>
-      </div>
-    </div>
-    {% block page %}{% endblock %}
-    <div class="section imprint center">
-      <div class="container">
-        <p class="section-description"><a href="/impressum.html">Impressum</a></p>
-        <p class="section-description">Diese Seite verwendet keine Cookies und speichert keine personenbezogenen Daten.</p>
-      </div>
-    </div>
+  <body class="light">
+    <main class="responsive">
+      {% block page %}{% endblock %}
+    </main>
+    <footer>
+      <nav class="center-align">
+        <a href="/" class="link">Start</a>
+        <a href="/impressum.html" class="link">Impressum</a>
+        <a href="/impressum.html#datenschutz" class="link">Datenschutz</a>
+        <a href="/intern.html" class="link">Intern</a>
+      </nav>
+    </footer>
     <script type="text/javascript">
       ytConsent();
       autolink();
